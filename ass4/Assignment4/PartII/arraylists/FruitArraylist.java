@@ -62,7 +62,8 @@ public class FruitArraylist {
 		Apple retainedRottenGreenApple = rottenGreenApple;
 		for(Fruit fruit: fruitArrayList){
 			if(fruit.getClass() == Apple.class && fruit.equals(retainedRottenGreenApple)){
-				System.out.println("\n" + fruit.toString() + "\n");
+				System.out.println("\n" + fruit.toString() 
+						+ "\nThe loop breaks after deleting the printed object, because only 1 of such fruit objects are present in the array.");
 				fruitArrayList.remove(fruit);
 				break;
 			}
