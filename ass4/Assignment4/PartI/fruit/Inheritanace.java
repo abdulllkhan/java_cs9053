@@ -1,13 +1,12 @@
-package arraylists;
+package fruit;
+
 import java.util.ArrayList;
-import java.util.Iterator;
 
-import fruit.*;
-// import fruit;
+import arraylists.FruitArraylist;
 
-public class FruitArraylist {	
+public class Inheritanace {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
         //                                 testing //                                 ??//
 
@@ -96,25 +95,11 @@ public class FruitArraylist {
 			}
 		}
 
-
-		// Iterator<Fruit> iterator = fruitArrayList.iterator();
-		// while (iterator.hasNext()) {
-		// 	Fruit fruit = iterator.next();
-		//     if(fruit.getClass() == Apple.class && fruit.isRotten() && fruit.getColor() == "green"){
-        //         if(retainedRottenGreenApple.equals(fruit)){
-		// 			System.out.println("\n" + fruit.toString() 
-		// 					+ "\nThe loop breaks after deleting the printed object, because only 1 of such fruit objects are present in the array.");
-		// 			fruitArrayList.remove(fruit);
-        //             // break;
-		// 		}
-		// 	}
-		// }
-
 		System.out.println("The fruit objects are: ");
 		for(Fruit fruit: fruitArrayList){
 			System.out.println("\n" + fruit.toString() + "\n");
 		}
         
     }
-
+    
 }
